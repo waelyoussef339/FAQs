@@ -1,0 +1,138 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    width: 100%;
+    height: 100vh;
+    font-family:'Work Sans';
+}
+img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 600px;
+    min-height: 500px;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-45%); 
+} 
+.container .header{
+    position: absolute;
+    width: 35%;
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header .star{
+    width: 40px;
+    height: 40px;
+}
+
+.container .header h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+.container .container2 {
+    position: absolute;
+    top: 20%;
+}
+.container .container2 .header2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.container .container2 .header2 p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.container .container2 .header2 img{
+    width: 30px;
+    height: 30px;
+}
+.container .container2 .paragraph{
+    width: 90%;
+    text-align:left;
+    line-height: 20px;
+    margin: 20px auto;
+    word-spacing: 4px;
+    opacity: 0.5;
+}
+.container .container3{
+    position: absolute;
+    width: 90%;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.container .container3 img {
+    width: 30px ;
+    height: 30px;
+}
+.container .container3 >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding-top: 20px;
+    border-top: 1px solid hsla(0, 6%, 93%, 0.8);
+    font-size: 18px;
+    font-weight: 600;
+}
+.container .container3 >div >p:hover{
+    cursor: pointer;
+    color:rgb(212, 66, 212);
+}
+.style{
+    width: 90%;
+    text-align:left;
+    line-height: 20px;
+    margin: 5px auto;
+    word-spacing: 4px;
+    opacity: 0.5;
+}
+
+@media (max-width:435px){
+    #img {
+        background-image: url(images/background-pattern-mobile.svg);
+        width: 100%;
+        height: 30%;
+    }
+    .container {
+        width: 90%;
+        height: 550px;
+        padding: 2px;
+    }
+    .container .header {
+        width: 50%;
+    }
+    .container .container2{
+        width: 95%;
+    }
+    .container .container2 .header2{
+        width: 90%;
+        margin-left: 16px;
+    }
+    .container .container3 >div{
+        margin-left: 16px;
+    }
+}
+
